@@ -1,0 +1,33 @@
+﻿<Page x:Class="diplomZ.searchPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:diplomZ"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="searchPage" Height="443.04">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="#FFE5E5E5" Height="443.04">
+            <Button x:Name="searchPage_button_goBack" Content="Назад" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="64" Click="Button_Click"/>
+            <RadioButton x:Name="search_radioButton_name" Content="Имя" HorizontalAlignment="Left" Height="20" Margin="644,47,0,0" VerticalAlignment="Top" Width="125"/>
+            <RadioButton x:Name="search_radioButton_lastName" Content="Фамилия" HorizontalAlignment="Left" Height="20" Margin="644,67,0,0" VerticalAlignment="Top" Width="125" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="search_radioButton_surname" Content="Отчество" HorizontalAlignment="Left" Height="18" Margin="644,87,0,0" VerticalAlignment="Top" Width="125" Checked="RadioButton_Checked"/>
+            <Label Content="Сортировка" HorizontalAlignment="Left" Height="24" Margin="653,11,0,0" VerticalAlignment="Top" Width="116"/>
+            <RadioButton x:Name="search_radioButton_createdAt" Content="Дата создания" HorizontalAlignment="Left" Height="18" Margin="644,105,0,0" VerticalAlignment="Top" Width="125" Checked="RadioButton_Checked" IsChecked="True"/>
+            <RadioButton x:Name="search_radioButton_device" Content="Устройство" HorizontalAlignment="Left" Height="18" Margin="644,123,0,0" VerticalAlignment="Top" Width="125" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="search_radioButton_model" Content="Модель устройства" HorizontalAlignment="Left" Height="18" Margin="644,141,0,0" VerticalAlignment="Top" Width="125" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="search_radioButton_repairDate" Content="Дата починки" HorizontalAlignment="Left" Height="18" Margin="644,159,0,0" VerticalAlignment="Top" Width="125" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="search_radioButton_status" Content="Статус" HorizontalAlignment="Left" Height="18" Margin="644,177,0,0" VerticalAlignment="Top" Width="125" Checked="RadioButton_Checked"/>
+            <Button Content="Сбросить" HorizontalAlignment="Left" Height="20" Margin="701,206,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click_1"/>
+            <Button Content="Применить" HorizontalAlignment="Left" Height="20" Margin="701,231,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click_2"/>
+        </Grid>
+        <Border BorderBrush="Black" BorderThickness="1"/>
+        <ListBox x:Name="searchPage_ListBox" HorizontalAlignment="Left" Height="346" Margin="28,64,0,0" VerticalAlignment="Top" Width="521"/>
+
+    </Grid>
+</Page>
