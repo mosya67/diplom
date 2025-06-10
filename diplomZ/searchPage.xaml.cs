@@ -26,6 +26,10 @@ namespace diplomZ
         public searchPage()
         {
             InitializeComponent();
+            for (int i = 0; i < faults.Count; i++)
+            {
+                searchPage_ListBox.Items.Add(new FaultDTO(faults[i], i));
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) // go back
@@ -55,9 +59,28 @@ namespace diplomZ
 
         }
 
-        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
+        private void searchPage_ListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
+            string selectedItem = searchPage_ListBox.SelectedItem.ToString();
+        }
 
+        private class FaultDTO
+        {
+            private Fault fault;
+            private int numb;
+
+            public FaultDTO(Fault fault, int numb)
+            {
+                this.fault = fault ?? throw new ArgumentNullException(nameof(fault));
+                this.numb = numb;
+            }
+
+            public override string ToString()
+            {
+                return $"{numb}. {fault.Order.Created_At} {fault.Order.Status.Name}\n"
+                        + $"{new string(' ', )}{fault.Order.Customer.LastName} {fault.Order.Customer.FirstName} {fault.Order.Customer.Surname}\n"
+                        + $"{new string(' ', )}{fault.Device.Model}";
+            }
         }
     }
 }

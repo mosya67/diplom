@@ -23,6 +23,7 @@ namespace Database.GetFunc
         {
             var a = context.Faults.AsNoTracking()
                 .Include(e => e.Order).ThenInclude(e => e.Customer)
+                .Include(e => e.Order).ThenInclude(e => e.Status)
                 .Include(e => e.Device)
                 .Where(e => (e.Order.Created_At >= filters.createDateFirst && e.Order.Created_At <= filters.createDateLast)
                     && e.Device.Name.Contains(filters.device.Name)

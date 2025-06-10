@@ -108,9 +108,8 @@ namespace diplomZ
             filter.surname = _search_surname.Text;
 
             var results = getFaults.Get(filter);
-
             searchPage.faults = results;
-            //заполнение результатами
+
             NavigationService.Navigate(new searchPage());
         }
 

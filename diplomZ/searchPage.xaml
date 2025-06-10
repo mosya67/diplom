@@ -27,7 +27,7 @@
             <Button Content="Применить" HorizontalAlignment="Left" Height="20" Margin="701,231,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click_2"/>
         </Grid>
         <Border BorderBrush="Black" BorderThickness="1"/>
-        <ListBox x:Name="searchPage_ListBox" HorizontalAlignment="Left" Height="346" Margin="28,64,0,0" VerticalAlignment="Top" Width="521"/>
+        <ListBox x:Name="searchPage_ListBox" HorizontalAlignment="Left" Height="346" Margin="28,64,0,0" VerticalAlignment="Top" Width="521" MouseDoubleClick="searchPage_ListBox_MouseDoubleClick"/>
 
     </Grid>
 </Page>
