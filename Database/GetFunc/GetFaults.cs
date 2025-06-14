@@ -21,6 +21,9 @@ namespace Database.GetFunc
 
         public List<Fault> Get(SearchFilterDTO filters)
         {
+            bool name = false;
+            bool lastname = false;
+            bool surname = false;
             var a = context.Faults.AsNoTracking()
                 .Include(e => e.Order).ThenInclude(e => e.Customer)
                 .Include(e => e.Order).ThenInclude(e => e.Status)
@@ -30,11 +33,13 @@ namespace Database.GetFunc
                     && e.Device.Model.Contains(filters.device.Model)
                 );
             if (!string.IsNullOrEmpty(filters.firstName))
-                a = a.Where(e => string.IsNullOrEmpty(filters.firstName) ? e.Order.Customer.FirstName == filters.firstName : true);
+                name = true;
             if (!string.IsNullOrEmpty(filters.lastName))
-                a = a.Where(e => string.IsNullOrEmpty(filters.firstName) ? e.Order.Customer.FirstName == filters.firstName : true);
+                lastname = true;
             if (!string.IsNullOrEmpty(filters.surname))
-                a = a.Where(e => string.IsNullOrEmpty(filters.firstName) ? e.Order.Customer.FirstName == filters.firstName : true);
+                surname = true;
+
+            a = a.Where(e => (name ? e.Order.Customer.FirstName.ToLower() == filters.firstName.ToLower() : true) && (lastname ? e.Order.Customer.LastName.ToLower() == filters.lastName.ToLower() : true) && (surname ? e.Order.Customer.Surname.ToLower() == filters.surname.ToLower() : true));
 
             return a.ToList();
         }

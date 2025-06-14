@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:diplomZ"
         ResizeMode="NoResize"
         mc:Ignorable="d"
-        Title="MainWindow" Height="459" Width="800">
-    <Grid>
-        <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        Title="MainWindow" Height="460" Width="800"
+        >
+    <Grid Margin="0,18,0,1">
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,-18,0,0"/>
     </Grid>
 </Window>

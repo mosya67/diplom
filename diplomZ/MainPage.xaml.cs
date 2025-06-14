@@ -121,6 +121,9 @@ namespace diplomZ
             _newOrder_about.Text = null;
             _newOrder_model.Text = null;
             _newOrder_device.Text = null;
+
+            newOrder_errorName.Text = "";
+            newOrder_errorAbout.Text = "";
         }
     }
 }

@@ -1,0 +1,22 @@
+﻿<Page x:Class="diplomZ.FaultInfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:diplomZ"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FaultInfo">
+
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1"/>
+        <Border BorderBrush="Black" BorderThickness="1"/>
+        <Grid Background="#FFE5E5E5" Height="443.04" Margin="0,3,0,3">
+            <Button x:Name="searchPage_button_goBack" Content="Назад" HorizontalAlignment="Left" Height="25" Margin="10,7,0,0" VerticalAlignment="Top" Width="64" Click="Button_Click"/>
+            <TextBlock x:Name="_FaultInfo_info" HorizontalAlignment="Left" Height="321" Margin="10,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>
+            <TextBlock x:Name="_FaultInfo_solution" HorizontalAlignment="Left" Height="321" Margin="470,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="302"/>
+            <Button x:Name="_FaultInfo_Button_Edit" Content="Отредактировать" HorizontalAlignment="Left" Height="28" Margin="664,10,0,0" VerticalAlignment="Top" Width="108" Click="_FaultInfo_Button_Edit_Click"/>
+        </Grid>
+
+    </Grid>
+</Page>

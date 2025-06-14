@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:diplomZ"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="searchPage" Height="443.04">
+      Title="searchPage" Height="443" Width="800">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -26,8 +26,7 @@
             <Button Content="Сбросить" HorizontalAlignment="Left" Height="20" Margin="701,206,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click_1"/>
             <Button Content="Применить" HorizontalAlignment="Left" Height="20" Margin="701,231,0,0" VerticalAlignment="Top" Width="68" Click="Button_Click_2"/>
         </Grid>
-        <Border BorderBrush="Black" BorderThickness="1"/>
-        <ListBox x:Name="searchPage_ListBox" HorizontalAlignment="Left" Height="346" Margin="28,64,0,0" VerticalAlignment="Top" Width="521" MouseDoubleClick="searchPage_ListBox_MouseDoubleClick"/>
+        <ListBox x:Name="searchPage_ListBox" HorizontalAlignment="Left" Height="346" Margin="28,64,0,0" VerticalAlignment="Top" Width="521" MouseDoubleClick="searchPage_ListBox_MouseDoubleClick" ItemsSource="{Binding}" VirtualizingPanel.ScrollUnit="Pixel"/>
 
     </Grid>
 </Page>
