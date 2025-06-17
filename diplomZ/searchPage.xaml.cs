@@ -105,8 +105,10 @@ namespace diplomZ
 
         private void searchPage_ListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            FaultInfo.fault = ((FaultDTO)searchPage_ListBox.SelectedItem).fault;
-            NavigationService.Navigate(new FaultInfo());
+            if (searchPage_ListBox.SelectedItem != null) {
+                FaultInfo.fault = ((FaultDTO)searchPage_ListBox.SelectedItem).fault;
+                NavigationService.Navigate(new FaultInfo());
+            }
         }
 
         private class FaultDTO

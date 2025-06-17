@@ -22,6 +22,8 @@ namespace Database.WriteFunc
 
             Device? device = context.Devices.FirstOrDefault(e => e.Name == fault.Device.Name && e.Model == fault.Device.Model);
             if (device == null) context.Devices.Add(fault.Device);
+            else fault.Device = device;
+            context.Faults.Add(fault);
         }
     }
 }

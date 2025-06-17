@@ -13,22 +13,30 @@
         <Border BorderBrush="Black" BorderThickness="1"/>
         <Grid Background="#FFE5E5E5" Height="443.04" Margin="0,3,0,3">
             <Button x:Name="searchPage_button_goBack" Content="Назад" HorizontalAlignment="Left" Height="25" Margin="10,7,0,0" VerticalAlignment="Top" Width="64" Click="Button_Click"/>
-            <TextBox x:Name="_FaultInfoEdit_Name" HorizontalAlignment="Left" Height="19" Margin="138,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-            <Label Content="Дата обращения" HorizontalAlignment="Left" Height="24" Margin="10,53,0,0" VerticalAlignment="Top" Width="116"/>
-            <TextBox x:Name="_FaultInfoEdit_Name_Копировать" HorizontalAlignment="Left" Height="19" Margin="138,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-            <Label Content="Статус заказа" HorizontalAlignment="Left" Height="24" Margin="10,82,0,0" VerticalAlignment="Top" Width="116"/>
-            <TextBox x:Name="_FaultInfoEdit_Name_Копировать1" HorizontalAlignment="Left" Height="19" Margin="138,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-            <Label Content="Имя" HorizontalAlignment="Left" Height="24" Margin="10,111,0,0" VerticalAlignment="Top" Width="116"/>
-            <TextBox x:Name="_FaultInfoEdit_Name_Копировать2" HorizontalAlignment="Left" Height="19" Margin="138,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-            <Label Content="Фамилия" HorizontalAlignment="Left" Height="24" Margin="10,140,0,0" VerticalAlignment="Top" Width="116"/>
-            <TextBox x:Name="_FaultInfoEdit_Name_Копировать3" HorizontalAlignment="Left" Height="19" Margin="138,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-            <Label Content="Отчество" HorizontalAlignment="Left" Height="24" Margin="10,169,0,0" VerticalAlignment="Top" Width="116"/>
-            <TextBox x:Name="_FaultInfoEdit_Name_Копировать4" HorizontalAlignment="Left" Height="19" Margin="138,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-            <Label Content="Тип устройства" HorizontalAlignment="Left" Height="24" Margin="10,198,0,0" VerticalAlignment="Top" Width="116"/>
-            <TextBox x:Name="_FaultInfoEdit_Name_Копировать5" HorizontalAlignment="Left" Height="19" Margin="138,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-            <Label Content="Модель устройства" HorizontalAlignment="Left" Height="24" Margin="10,227,0,0" VerticalAlignment="Top" Width="116"/>
-            <TextBox x:Name="_FaultInfoEdit_Name_Копировать6" HorizontalAlignment="Left" Height="112" Margin="138,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <TextBox x:Name="_FaultInfoEdit_CreatedAt" HorizontalAlignment="Left" Height="24" Margin="138,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Label Content="Дата обращения" HorizontalAlignment="Left" Height="29" Margin="10,53,0,0" VerticalAlignment="Top" Width="116"/>
+            <TextBox x:Name="_FaultInfoEdit_status" HorizontalAlignment="Left" Height="24" Margin="138,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Label Content="Статус заказа" HorizontalAlignment="Left" Height="29" Margin="10,82,0,0" VerticalAlignment="Top" Width="116"/>
+            <TextBox x:Name="_FaultInfoEdit_Name" HorizontalAlignment="Left" Height="24" Margin="138,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Label Content="Имя" HorizontalAlignment="Left" Height="29" Margin="10,111,0,0" VerticalAlignment="Top" Width="116"/>
+            <TextBox x:Name="_FaultInfoEdit_LastName" HorizontalAlignment="Left" Height="24" Margin="138,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Label Content="Фамилия" HorizontalAlignment="Left" Height="29" Margin="10,140,0,0" VerticalAlignment="Top" Width="116"/>
+            <TextBox x:Name="_FaultInfoEdit_Surname" HorizontalAlignment="Left" Height="24" Margin="138,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Label Content="Отчество" HorizontalAlignment="Left" Height="29" Margin="10,169,0,0" VerticalAlignment="Top" Width="116"/>
+            <TextBox x:Name="_FaultInfoEdit_Device" HorizontalAlignment="Left" Height="24" Margin="138,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Label Content="Тип устройства" HorizontalAlignment="Left" Height="29" Margin="10,198,0,0" VerticalAlignment="Top" Width="116"/>
+            <TextBox x:Name="_FaultInfoEdit_Model" HorizontalAlignment="Left" Height="24" Margin="138,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Label Content="Модель устройства" HorizontalAlignment="Left" Height="29" Margin="10,227,0,0" VerticalAlignment="Top" Width="116"/>
+            <TextBox x:Name="_FaultInfoEdit_About" HorizontalAlignment="Left" Height="112" Margin="138,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
             <Label Content="Описание проблемы" HorizontalAlignment="Left" Height="24" Margin="10,256,0,0" VerticalAlignment="Top" Width="128"/>
+            <Label Content="Редактироование" HorizontalAlignment="Left" Height="23" Margin="94,30,0,0" VerticalAlignment="Top" Width="152"/>
+            <Label Content="Добавить решение" HorizontalAlignment="Left" Height="23" Margin="562,30,0,0" VerticalAlignment="Top" Width="152"/>
+            <TextBox x:Name="_FaultInfoEdit_Name_Копировать7" HorizontalAlignment="Left" Height="24" Margin="598,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Label Content="Причина поломки" HorizontalAlignment="Left" Height="24" Margin="470,58,0,0" VerticalAlignment="Top" Width="116"/>
+            <TextBox x:Name="_FaultInfoEdit_Name_Копировать8" HorizontalAlignment="Left" Height="89" Margin="598,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Label Content="Комментарий" HorizontalAlignment="Left" Height="24" Margin="470,87,0,0" VerticalAlignment="Top" Width="116"/>
+            <Button x:Name="_FaultInfoEdit_Button_save" Content="Сохранить" HorizontalAlignment="Left" Height="31" Margin="313,342,0,0" VerticalAlignment="Top" Width="87" Click="_FaultInfoEdit_Button_save_Click"/>
+            <Button x:Name="_FaultInfoEdit_Button_AddSolution" Content="Добавить решение" HorizontalAlignment="Left" Height="31" Margin="621,342,0,0" VerticalAlignment="Top" Width="111" Click="_FaultInfoEdit_Button_AddSolution_Click"/>
         </Grid>
 
     </Grid>

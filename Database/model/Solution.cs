@@ -9,6 +9,7 @@ namespace Database.model
     public class Solution
     {
         public int SolutionId;
+        public string causeFailure;
         public string Description;
         public DateTime DateResolved;
 

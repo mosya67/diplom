@@ -18,7 +18,7 @@
                     <Label Content="Модель" HorizontalAlignment="Left" Margin="437,73,0,0" VerticalAlignment="Top" Width="63" Height="28" RenderTransformOrigin="0.5,0"/>
                     <Label Content="О поломке" HorizontalAlignment="Left" Margin="437,136,0,0" VerticalAlignment="Top" Width="84" Height="28" RenderTransformOrigin="0.5,0"/>
                     <TextBox x:Name="_newOrder_about" HorizontalAlignment="Left" Height="111" Margin="437,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" RenderTransformOrigin="0.5,0"/>
-                    <Button x:Name="_button_placeOrder" Content="Оформить" HorizontalAlignment="Left" Height="40" Margin="336,349,0,0" VerticalAlignment="Top" Width="140" Click="Button_Click_1" RenderTransformOrigin="0.5,0"/>
+                    <Button x:Name="_button_placeOrder" Content="Оформить" HorizontalAlignment="Left" Height="40" Margin="421,349,0,0" VerticalAlignment="Top" Width="140" Click="Button_Click_1" RenderTransformOrigin="0.5,0"/>
                     <TextBox x:Name="_newOrder_name" HorizontalAlignment="Left" Height="25" Margin="43,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" RenderTransformOrigin="0.5,0"/>
                     <Label Content="Имя" HorizontalAlignment="Left" Margin="43,73,0,0" VerticalAlignment="Top" Width="168" Height="28" RenderTransformOrigin="0.5,0"/>
                     <TextBox x:Name="_newOrder_lastName" HorizontalAlignment="Left" Height="25" Margin="43,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" RenderTransformOrigin="0.5,0"/>
@@ -27,6 +27,9 @@
                     <Label Content="Отчество" HorizontalAlignment="Left" Margin="43,189,0,0" VerticalAlignment="Top" Width="168" Height="28" RenderTransformOrigin="0.5,0"/>
                     <TextBlock x:Name="newOrder_errorName" HorizontalAlignment="Left" Height="28" Margin="74,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Foreground="Red" TextAlignment="Center" RenderTransformOrigin="0.5,0"/>
                     <TextBlock x:Name="newOrder_errorAbout" HorizontalAlignment="Left" Height="28" Margin="509,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red" TextAlignment="Center" RenderTransformOrigin="0.5,0"/>
+                    <ComboBox x:Name="_newOrder_ComboBox_device" HorizontalAlignment="Left" Height="25" Margin="211,282,0,0" VerticalAlignment="Top" Width="29" SelectionChanged="ComboBox_SelectionChanged" DropDownOpened="_newOrder_ComboBox_device_DropDownOpened"/>
+                    <ComboBox x:Name="_newOrder_ComboBox_model" HorizontalAlignment="Left" Height="25" Margin="605,106,0,0" VerticalAlignment="Top" Width="29" DropDownOpened="_newOrder_ComboBox_model_DropDownOpened" SelectionChanged="_newOrder_ComboBox_model_SelectionChanged"/>
+                    <Button x:Name="_button_clearNewOrder" Content="Очистить" HorizontalAlignment="Left" Height="40" Margin="144,349,0,0" VerticalAlignment="Top" Width="140" Click="_button_clearNewOrder_Click" RenderTransformOrigin="0.5,0"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Поиск" Margin="-2,-2,-12,0" RenderTransformOrigin="0.5,0">
@@ -48,6 +51,8 @@
                     <Label Content="От" HorizontalAlignment="Left" Margin="13,60,0,0" VerticalAlignment="Top"/>
                     <Button Content="Поиск" HorizontalAlignment="Left" Height="28" Margin="230,305,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click_2"/>
                     <Button Content="Очистить" HorizontalAlignment="Left" Height="28" Margin="59,305,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click"/>
+                    <ComboBox x:Name="_search_ComboBox_device" HorizontalAlignment="Left" Height="25" Margin="391,141,0,0" VerticalAlignment="Top" Width="29" SelectionChanged="_search_ComboBox_device_SelectionChanged" DropDownOpened="_search_ComboBox_device_DropDownOpened"/>
+                    <ComboBox x:Name="_search_ComboBox_model" HorizontalAlignment="Left" Height="25" Margin="391,199,0,0" VerticalAlignment="Top" Width="29" SelectionChanged="_search_ComboBox_model_SelectionChanged" DropDownOpened="_search_ComboBox_model_DropDownOpened"/>
                 </Grid>
             </TabItem>
         </TabControl>

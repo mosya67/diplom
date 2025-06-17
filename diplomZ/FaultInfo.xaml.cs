@@ -42,6 +42,7 @@ namespace diplomZ
                 _FaultInfo_solution.Text =
                 $"""
                 Дата окончания ремонта: {fault.Solution?.DateResolved}
+                Причина поломки: {fault.Solution.causeFailure}
                 Комментарий: {fault.Solution?.Description}
                 """;
             }
